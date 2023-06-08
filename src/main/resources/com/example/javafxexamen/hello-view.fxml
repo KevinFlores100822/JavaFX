@@ -6,56 +6,53 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.control.PasswordField?>
 
 <VBox fx:id="mainPanel" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.javafxexamen.HelloController">
-    <VBox fx:id="bannerContainer">
+    <VBox fx:id="main">
         <Pane fx:id="bannerImage">
         </Pane>
         <Pane fx:id="profileImage">
         </Pane>
-    </VBox>
-    <Pane fx:id="divider1">
-    </Pane>
-    <VBox fx:id="loginTextContainer">
-        <Label fx:id="lblWelcome">
+        <Pane fx:id="divider1">
+        </Pane>
+        <Label fx:id="lblWelcome" styleClass="labelText">
             ¡BIENVENIDO OTRA VEZ!
         </Label>
-        <Label fx:id="lblLogin">
+        <Label fx:id="lblLogin" styleClass="labelText">
             Ingresa a tu cuenta
         </Label>
-    </VBox>
-    <Pane fx:id="divider2">
-    </Pane>
-    <VBox fx:id="loginFieldsContainer">
-        <HBox fx:id="usernameField">
-            <Pane fx:id="usernameIcon">
-            </Pane>
-            <TextField fx:id="tfUsername" styleClass="field-class">
-            </TextField>
-        </HBox>
-        <Pane fx:id="divider3">
+        <Pane fx:id="divider2">
         </Pane>
-        <HBox fx:id="passwordField">
-            <Pane fx:id="passwordIcon">
+        <VBox fx:id="loginFieldsContainer">
+            <HBox fx:id="usernameField">
+                <Pane fx:id="usernameIcon">
+                </Pane>
+                <TextField fx:id="tfUsername" styleClass="field-class">
+                </TextField>
+            </HBox>
+            <Pane fx:id="divider3">
             </Pane>
-            <PasswordField fx:id="pswdfldfPassword" styleClass="field-class">
-            </PasswordField>
+            <HBox fx:id="passwordField">
+                    <Pane fx:id="passwordIcon">
+                    </Pane>
+                    <PasswordField fx:id="pswdfldfPassword" styleClass="field-class">
+                    </PasswordField>
+            </HBox>
+            <Pane fx:id="divider4">
+            </Pane>
+        </VBox>
+        <HBox fx:id="recuerdameButton" styleClass="hbox-class">
+            <Label fx:id="txtRememberme" text="Recuerdame" />
+            <CheckBox fx:id="rememberMeCheckBox" />
         </HBox>
-        <Pane fx:id="divider4">
+        <Pane fx:id="divider5">
         </Pane>
+        <HBox fx:id="loginButtonContainer">
+            <Button fx:id="btnLogin" text="Login">
+            </Button>
+        </HBox>
     </VBox>
-    <HBox fx:id="recuerdameButton" styleClass="hbox-class">
-        <Label fx:id="txtRememberme" text="Recuerdame" />
-        <CheckBox fx:id="rememberMeCheckBox" />
-    </HBox>
-    <Pane fx:id="divider5">
-    </Pane>
-    <HBox fx:id="loginButtonContainer">
-        <Button fx:id="btnLogin" text="Login">
-        </Button>
-    </HBox>
 </VBox>
