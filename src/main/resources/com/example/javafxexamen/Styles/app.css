@@ -2,9 +2,7 @@
     -fx-background-color: #B0B3C4;
     -fx-spacing: 0px;
 }
-#bannerContainer {
-    -fx-background-color: #B0B3C4;
-    -fx-border-width: 0px;
+#main{
     -fx-alignment: center;
 }
 #bannerImage {
@@ -27,7 +25,7 @@
     -fx-pref-width: 400;
     -fx-pref-height: 20;
 }
-#loginTextContainer {
+.labelText {
     -fx-text-fill: #000000;
     -fx-font-family: Montserrat;
     -fx-alignment: center;
